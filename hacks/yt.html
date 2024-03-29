@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>search in javascript</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="container">
+<div class="search">
+<h1>Washrooms near you</h1>
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<div class="filterBox">
+  <h2>Restroom Requirements</h2>
+  <div class="categorylist">
+      <label for="available">
+          <input type="checkbox" id="available" class="filter-checkbox">Available (Open)
+      </label>
+      <label for="clean">
+          <input type="checkbox" id="clean" class="filter-checkbox">Clean
+      </label>
+      <label for="safe">
+          <input type="checkbox" id="safe" class="filter-checkbox">Safe Location
+      </label>
+      <label for="accessible">
+          <input type="checkbox" id="accessible" class="filter-checkbox">Wheelchair Accessible
+      </label>
+      <label for="amenities">
+          <input type="checkbox" id="amenities" class="filter-checkbox">Amenities Available
+      </label>
+      <label for="hygiene">
+          <input type="checkbox" id="hygiene" class="filter-checkbox">Hygiene Facilities
+      </label>
+      <label for="privacy">
+          <input type="checkbox" id="privacy" class="filter-checkbox">Privacy Assured
+      </label>
+      <label for="compliance">
+          <input type="checkbox" id="compliance" class="filter-checkbox">Regulatory Compliance
+      </label>
+      <label for="covid19">
+          <input type="checkbox" id="covid19" class="filter-checkbox">COVID-19 Safety Measures
+      </label>
+  </div>
+</div>
+
+<div class="product-list">
+  <div class="product" data-available="false" data-clean="true" data-safe="true" data-accessible="true" data-amenities="true" data-hygiene="true" data-privacy="true" data-compliance="true" data-covid19="true" data-category="Public bathroom">
+        
+    <img src="images/25q02xb8.png">
+      <h3>SBM Toilet, Rajouri Garden New Delhi</h3>
+      <p><strong>Address:</strong> Sant Sujan Singh Marg, Main Market, Block J, Rajouri Garden, New Delhi, Delhi, 110027</p>
+      <p><strong>Reviews:</strong> 5.0</p>
+      <p><strong>Mon-Sun:</strong> Open 6:00 am - 10:00 pm</p>
+      <p><strong>Category:</strong> Public bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+
+        <img src="images/Swachh public Toilet, Rajouri Garden.png">
+      <h3>Swachh public Toilet, Rajouri Garden</h3>
+      <p><strong>Address:</strong> J4XC+MWV, Shivaji Place, Vishal Enclave, Rajouri Garden, New Delhi, Delhi, 110027</p>
+      <p><strong>Reviews:</strong> 4.3</p>
+      <p><strong>Mon-Sun:</strong> Open 6:00 am - 10:00 pm</p>
+      <p><strong>Category:</strong> Public Bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Swachh public toilet, Karol Bagh metro station south side.jpeg">
+      <h3>Swachh public toilet, Karol Bagh metro station south side</h3>
+      <p><strong>Address:</strong> J5VQ+G99, Block B, Karol Bagh, New Delhi, Delhi, 110060</p>
+      <p><strong>Reviews:</strong> 4.3</p>
+      <p><strong>Mon-Sun:</strong> 6:00 am - 11:00 pm</p>
+      <p><strong>Category:</strong> Public Toilet</p>
+    </div>
+  
+    
+  
+    
+  
+  <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Swacch Public Toilet, Pahar Ganj, Delhi.jpeg">
+      <h3>Swacch Public Toilet, Pahar Ganj, Delhi</h3>
+      <p><strong>Address:</strong> R.K, Bharat Nagar, Ashram Road, Pahar Ganj, Delhi - 110055</p>
+      <p><strong>Reviews:</strong> 4.3</p>
+      <p><strong>Opens at:</strong> 06:00 AM - 10:00 pm</p>
+      <p><strong>Category:</strong> Public Toilets</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Swacch Public Toilet, Moti Nagar, Delhi.jpeg">
+      <h3>Swacch Public Toilet, Moti Nagar, Delhi</h3>
+      <p><strong>Address:</strong> Moti Nagar Metro Station, New, Mini Market, New, Moti Nagar, Delhi - 110015</p>
+      <p><strong>Reviews:</strong> 4.5</p>
+      <p><strong>Opens at:</strong> 06:00 AM</p>
+      <p><strong>Category:</strong> Public Toilets</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Dwarka sector 10, Dwarka, Delhi.jpeg">
+      <h3>Dwarka sector 10, Dwarka, Delhi</h3>
+      <p><strong>SBM Toilet</strong></p>
+      <p><strong>Address:</strong> Dwarka sector 10, Dwarka, Delhi - 110075 (near Sriram school)</p>
+      <p><strong>Reviews:</strong> 4.2 ratings</p>
+      <p><strong>Mon-Sun:</strong> 6:00 am - 10:00 pm</p>
+      <p><strong>Category:</strong> Public Bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Swachh Public Toilet,dwarka.jpeg">
+      <h3>Dwarka, Delhi</h3>
+      <p><strong>Swachh Public Toilet</strong></p>
+      <p><strong>Address:</strong> Metro station, Shahabad mohammadpur, Sector 21, Dwarka, New Delhi - 110075</p>
+      <p><strong>Reviews:</strong> 4.5 ratings</p>
+      <p><strong>Mon-Sun:</strong> 5:00 am - 11:00 pm</p>
+      <p><strong>Category:</strong> Public Bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Uttam Nagar, Delhi,susu point.jpeg">
+      <h3>Uttam Nagar, Delhi</h3>
+      <p><strong>Susu Point</strong></p>
+      <p><strong>Address:</strong> 166a, Goverdhan Park, Block E, Param Puri, Dwarka Mod, Uttam Nagar, Delhi - 110059</p>
+      <p><strong>Reviews:</strong> 3.5 ratings</p>
+      <p><strong>Category:</strong> Public Bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+        <img src="images/Sulabh Shauchalaya.jpeg">
+      <h3>Sulabh Shauchalaya</h3>
+      <p><strong>Address:</strong> A15, 1st Floor, Block D East, Uttam Nagar, Delhi 110059</p>
+      <p><strong>Reviews:</strong> 4.4</p>
+      <p><strong>Category:</strong> Public Bathroom</p>
+    </div>
+  
+    <div class="product" data-available="true" data-clean="true" data-category="Public bathroom">
+      <img src="images/West Punjabi Bagh, Delhi.jpeg ">
+    <h3>West Punjabi Bagh, Delhi Swachh Public Toilet  </h3>
+    <p><strong>Address:</strong> A15, 1st Floor, Block D East, Uttam Nagar, Delhi 110059</p>
+    <p><strong>Reviews:</strong> 4.4</p>
+    <p><strong>Category:</strong> Public Bathroom</p>
+  </div>
+   
+  
+</div>
+</div> 
+<!-- javascript -->
+<script type="text/javascript">
+    function search() {
+      let filter = document.getElementById('find').value.toUpperCase();
+      let items = document.querySelectorAll('.product');
+      items.forEach(function(item) {
+        let h3 = item.querySelector('h3');
+        let value = h3.innerHTML.toUpperCase() || h3.innerText.toUpperCase() || h3.textContent.toUpperCase();
+        if (value.indexOf(filter) > -1) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+    </script>
+    <script>
+      // Function to filter washroom results based on checkbox filters
+      function filterWashrooms() {
+          
+          const washroomCards = document.querySelectorAll('.product');
+  
+         
+          const availableChecked = document.getElementById('available').checked;
+          const cleanChecked = document.getElementById('clean').checked;
+          const safeChecked = document.getElementById('safe').checked;
+          const accessibleChecked = document.getElementById('accessible').checked;
+          const amenitiesChecked = document.getElementById('amenities').checked;
+          const hygieneChecked = document.getElementById('hygiene').checked;
+          const privacyChecked = document.getElementById('privacy').checked;
+          const complianceChecked = document.getElementById('compliance').checked;
+          const covid19Checked = document.getElementById('covid19').checked;
+  
+          washroomCards.forEach(card => {
+              const isAvailable = card.getAttribute('data-available') === 'true';
+              const isClean = card.getAttribute('data-clean') === 'true';
+              const isSafe = card.getAttribute('data-safe') === 'true';
+              const isAccessible = card.getAttribute('data-accessible') === 'true';
+              const hasAmenities = card.getAttribute('data-amenities') === 'true';
+              const hasHygieneFacilities = card.getAttribute('data-hygiene') === 'true';
+              const hasPrivacy = card.getAttribute('data-privacy') === 'true';
+              const isCompliant = card.getAttribute('data-compliance') === 'true';
+              const hasCovid19Measures = card.getAttribute('data-covid19') === 'true';
+  
+              
+              const shouldDisplay = (!availableChecked || isAvailable) &&
+                  (!cleanChecked || isClean) &&
+                  (!safeChecked || isSafe) &&
+                  (!accessibleChecked || isAccessible) &&
+                  (!amenitiesChecked || hasAmenities) &&
+                  (!hygieneChecked || hasHygieneFacilities) &&
+                  (!privacyChecked || hasPrivacy) &&
+                  (!complianceChecked || isCompliant) &&
+                  (!covid19Checked || hasCovid19Measures);
+  
+             
+              if (shouldDisplay) {
+                  card.style.display = 'block';
+              } else {
+                  card.style.display = 'none';
+              }
+          });
+      }
+      const checkboxes = document.querySelectorAll('.filter-checkbox');
+      checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', filterWashrooms);
+      });
+  </script>
+  
+</body>
+</html>
